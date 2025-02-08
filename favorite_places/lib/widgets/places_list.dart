@@ -31,7 +31,7 @@ class PlacesList extends StatelessWidget {
               ),
         ),
         subtitle: Text(
-          places[index].location!.toString(),
+          'Longtitude: ${places[index].location!.longitude.toString()}, Latitude: ${places[index].location!.latitude.toString()}',
           style: Theme.of(context).textTheme.bodySmall!.copyWith(
                 color: Theme.of(context).colorScheme.onBackground,
               ),
